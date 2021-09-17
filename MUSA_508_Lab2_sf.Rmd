@@ -50,16 +50,19 @@ acs_vars <- c("B01001_001E", # ACS total Pop estimate
               "B25002_003E", # Number of vacant housing units
               "B19013_001E", # Median HH Income ($)
               "B02001_002E", # People describing themselves as "white alone"
+              "B07010PR_023" #Estimate!!Total:!!Moved within same municipio:
+              "B07010PR_012" #Estimate!!Total:!!Same house 1 year ago:
               "B06009_006E") # Total graduate or professional degree
 
-myTracts <- c("42101023500", 
-              "42101023600", 
-              "42101023700", 
-              "42101025300", 
-              "42101025400",
-              "42101025500", 
-              "42101025600", 
-              "42101038800")
+myTracts <- c("42101007700", 
+              "42101007400", 
+              "42101007800", 
+              "42101036900", 
+              "42101008701",
+              "42101008702", 
+              "42101008802", 
+              "42101008801",
+              "42101007900")
 
 acsTractsPHL.2016.sf <- get_acs(geography = "tract",
                              year = 2016, 
